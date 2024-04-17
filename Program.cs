@@ -86,7 +86,13 @@
 
             // ToStringPrintAll(lispLangs);
 
-            ToStringPrintAll(nearMilleniumLangs);
+            //ToStringPrintAll(nearMilleniumLangs);
+
+
+            // Sorts the list alphebetically
+            var ordered = languages.OrderBy(x => x.Name);
+
+            ToStringPrintAll(ordered);
         }
 
         // Write a method PrettyPrintAll() that handles that for us. It should:
