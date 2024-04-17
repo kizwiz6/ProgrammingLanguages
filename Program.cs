@@ -91,8 +91,12 @@
 
             // Sorts the list alphebetically
             var ordered = languages.OrderBy(x => x.Name);
+            //ToStringPrintAll(ordered);
 
-            ToStringPrintAll(ordered);
+            // Finds the oldest language in the list using Min() method
+            var oldest = languages.Min(x => x.Year);
+
+            Console.WriteLine(oldest);
         }
 
         // Write a method PrettyPrintAll() that handles that for us. It should:
